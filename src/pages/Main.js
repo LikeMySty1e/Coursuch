@@ -4,8 +4,6 @@ import {Context} from "../index";
 import {Alert, Container} from "react-bootstrap";
 import './style.css';
 
-// lcp --proxyUrl http://176.99.10.146:5000
-
 const Main = observer(() => {
     const {main} = useContext(Context);
 
@@ -40,7 +38,7 @@ const Main = observer(() => {
                             неврологическая, офтальмологическая, кардиологическая, урологическая, педиатрическая...
                             <span className="textBlockColored">
                                 изотерическая, астрологическая, коммунистическая,
-                                а так же лечение прочих физических и психиатрических девиаций.
+                                а так же лечение прочих физических и психических девиаций.
                             </span>
                         </div>
                     </div>

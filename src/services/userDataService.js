@@ -1,9 +1,7 @@
+import httpClientHelper from '../http/httpClientHelper';
+
 export const login = (login, password) => {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(Math.random() * 100000000)
-        }, 1000)
-    })
+    return httpClientHelper.post('/users/login', { login, password });
 }
 
 export default { login };
