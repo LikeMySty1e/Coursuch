@@ -15,8 +15,7 @@ export default class MainStore {
     table = [];
     activeTab = null;
     pendingState = {
-        loading: true,
-        isSavingDemand: false
+        loading: true
     };
 
     constructor() {
@@ -29,7 +28,6 @@ export default class MainStore {
     init = () => {
         this.initAuth();
         this.setActiveTab(localStorage.getItem(`activeTab`) || tableTabEnum.Protocol);
-        this.setAlert(`Убейте меня`);
     }
 
     initAuth = () => {

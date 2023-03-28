@@ -1,7 +1,10 @@
 .settingButton {
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-right: 20px;
     height: 35px;
     width: 35px;
+
+    border: none;
 
     background-image: url("../../../icons/settings.m.svg");
     background-repeat: no-repeat;
